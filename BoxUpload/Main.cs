@@ -15,13 +15,13 @@ namespace BoxUpload
     {
         private BoxCalls boxCallsCollection;
 
-    protected override object RequestComAddInAutomationService()
-    {
-        if (boxCallsCollection == null)
+        protected override object RequestComAddInAutomationService()
+        {
+            if (boxCallsCollection == null)
                 boxCallsCollection = new BoxCalls();
-        return boxCallsCollection;
-    }
-    #region VSTO generated code
+            return boxCallsCollection;
+        }
+        #region VSTO generated code
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
         }

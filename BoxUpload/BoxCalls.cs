@@ -14,14 +14,14 @@ namespace BoxUpload
     [ComVisible(true)]
     public interface IBoxCalls
     {
-        void Upload_Doc(string folderId, string accessToken, string filePath, string fileName);
+        void uploadFile(string folderId, string accessToken, string filePath, string fileName);
     }
 
     [ComVisible(true)]
     [ClassInterface(ClassInterfaceType.None)]
     public class BoxCalls : IBoxCalls
     {
-        public void Upload_Doc(string folderId, string accessToken, string filePath, string fileName)
+        public void uploadFile(string folderId, string accessToken, string filePath, string fileName)
         {
             var client = new RestClient("https://upload.box.com/api/2.0");
             var request = new RestRequest("files/content", Method.POST);
