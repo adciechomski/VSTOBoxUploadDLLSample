@@ -4,6 +4,7 @@ This solution is only for BOX API testing purposes
 
 onOpened xls instance by VS, press Alt+F11 add new module and paste code to the module:
 
+```
 '###############################
 Sub VSTOcall()
     Dim addIn As COMAddIn
@@ -13,6 +14,7 @@ Sub VSTOcall()
     classObj.uploadFile "0", [accessToken], "C:\Users\aciec\OneDrive\Documents\", "test.txt"
 End Sub
 '###############################
+```
 
 To use uploadFile feature in VBA use exposed method:
 void uploadFile(string folderId, string accessToken, string filePath, string fileName);
