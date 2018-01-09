@@ -11,7 +11,7 @@ Sub VSTOcall()
     Dim classObj As Object
     Set addIn = Application.COMAddIns("BoxUpload")
     Set classObj = addIn.Object
-    classObj.uploadFile "0", [accessToken], "C:\Users\aciec\OneDrive\Documents\", "test.txt"
+    classObj.uploadFile "0", [accessToken], "C:\Users\username\OneDrive\Documents\", "test.txt"
 End Sub
 '###############################
 ```
