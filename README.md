@@ -1,6 +1,6 @@
 # BoxUpload
 
-This solution is only for BOX API testing purposes
+This solution is only for BOX API testing purposes, download it and open with Visual Studio. you can deploy it as VSTO and use as dll COM and do calls from VBA which is one of the methods of customizing BOX API in Office.
 
 onOpened xls instance by VS, press Alt+F11 add new module and paste code to the module:
 
